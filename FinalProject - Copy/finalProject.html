@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB-115 Final Project</title>
+    <script defer src="projectJS.js"></script>
+</head>
+
+<body>
+    <!--Banner Creation-->
+    <div class="banner">
+        <div class="banner__content">
+            <div class="banner__text">
+                <strong class="name">Ryan Burres</strong>
+                <strong class="course">WEB-115</strong>
+                <strong class="mealPlan">Build Your Meal Plan</strong>
+            </div>
+        </div>
+    </div>
+    <!--Form-->
+    <form id="myForm">
+        <div class="form_element">
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name" required></br>
+        </div>
+        <div class="form_element">
+            <label for="email">Email: </label>
+            <input type="text" name="email" id="email" required></br>
+        </div>
+        <div class="form_element">
+            <label for="goal">Goal: </label>
+            <input type="text" name="goal" id="goal" required></br>
+        </div>
+        <!--Getting the meals-->
+        <div class="form_meal_element">
+            <label for="breakfast">Breakfast: </label>
+            <input type="text" name="breakfast" id="breakfast"></br>
+        </div>
+        <div class="form_meal_element">
+            <label for="snack1">Snack 1: </label>
+            <input type="text" name="snack1" id="snack1"></br>
+        </div>
+        <div class="form_meal_element">
+            <label for="lunch">Lunch: </label>
+            <input type="text" name="lunch" id="lunch"></br>
+        </div>
+        <div class="form_meal_element">
+            <label for="snack2">Snack 2: </label>
+            <input type="text" name="snack2" id="snack2"></br>
+        </div>
+        <div class="form_meal_element">
+            <label for="dinner">Dinner: </label>
+            <input type="text" name="dinner" id="dinner"></br>
+        </div>
+        <!--Button to create html on the fly-->
+        <div class="buttons">
+            <input type="button" id="build_button" value="Create Meal Plan">
+            <button type="reset" onclick = "reset()">Reset</button> 
+            <input type="button" id="print_button" value="Print">       
+        </div>
+    </form>
+</body>
+
+</html>
+
+<!--<button type="button" onclick="window.print();">Print</button>-->
